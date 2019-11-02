@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/bidq/bidq"
+	bidq "github.com/bidq/core"
 
 	"github.com/urfave/cli"
 )
@@ -19,7 +19,7 @@ func setup() {
 	app.Name = "BidQ CLI"
 	app.Usage = "A simple CLI running BidQ"
 	app.Author = "oakfang (Alon Niv)"
-	app.Version = "0.1.0"
+	app.Version = "0.2.1"
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:        "host, s",
